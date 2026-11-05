@@ -34,7 +34,8 @@ dotnet run --project src/VulnerabilityTracker.Api -c Release --no-build -- --url
 
 ```shell
 dotnet publish src/VulnerabilityTracker.Api -c Release --no-restore -o artifacts/publish
-dotnet artifacts/publish/VulnerabilityTracker.Api.dll --contentRoot artifacts/publish --urls http://localhost:5080
+cd artifacts/publish
+dotnet VulnerabilityTracker.Api.dll --urls http://localhost:5080
 ```
 
 ## Настройки и хранение
