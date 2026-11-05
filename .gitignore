@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/TestResults/
+.vs/
+.idea/
+.vscode/
+artifacts/
+*.user
+*.suo
+# Supplied assignment stays local; the submission is documented in Markdown.
+639271559419595024.e7afef4fdcdc4ed0bd0dc41d7296f3f6.docx
