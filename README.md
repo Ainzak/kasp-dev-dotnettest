@@ -14,7 +14,6 @@ URL проверяется, но репозиторий не скачивает�
 ## Требования и запуск
 
 - .NET SDK **10.0.400**, указанный в `global.json`.
-- Интернет для первоначального восстановления NuGet-пакетов.
 - Для скрипта smoke-проверки — PowerShell 7. Для самого API PowerShell не требуется.
 
 Из корня репозитория:
@@ -26,9 +25,8 @@ dotnet test --solution VulnerabilityTracker.sln -c Release --no-build
 dotnet run --project src/VulnerabilityTracker.Api -c Release --no-build -- --urls http://localhost:5080
 ```
 
-Остановить сервис можно через Ctrl+C. Адрес OpenAPI: http://localhost:5080/openapi/v1.json.
+Адрес OpenAPI: http://localhost:5080/openapi/v1.json.
 Документ доступен во всех окружениях; графический Swagger UI не добавлен.
-В тестовом решении нет авторизации, база данных и внешние службы не нужны.
 
 Для получения каталога, готового к запуску:
 
